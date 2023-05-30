@@ -9,11 +9,8 @@ var botonCopiar = document.querySelector(".btn-copiar");
 
 botonEncriptar.onclick = encriptar; //Quitar paréntesis para que no inicie la función hasta que se llame
 botonDesencriptar.onclick = desencriptar;
-botonCopiar.addEventListener("click", copiar =() =>{
-    let contenido = resultado.textContent;
-    navigator.clipboard.writeText(contenido);
-})
 
+  
 function encriptar(){
     ocultarAdelante();
     resultado.textContent = encriptarTexto(recuperarTexto());
@@ -95,3 +92,13 @@ function desencriptarTexto(mensaje){
     }
     return textoFinal;
 }
+
+botonCopiar.addEventListener("click", copiar = () => {
+    let contenido = resultado.textContent;
+    navigator.clipboard.writeText(contenido);
+    botonCopiar.textContent = "Copiado ✔";
+
+    setTimeout(() => {
+        botonCopiar.textContent = "Copiar";
+    }, 800);
+});
