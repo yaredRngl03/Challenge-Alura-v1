@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter&family=Playfair+Display:wght@500&family=Signika&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/logo.svg" alt="logo" class="logo">
+        </header>
+        <main>
+            <section class="seccion1">
+                <textarea class="area" placeholder="Ingrese un texto aquí" autofocus></textarea>
+                <div class="alerta">
+                    <p><img src="imagenes/alerta.svg" alt="alerta">  Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenedor-botones">
+                    <input type="button" class="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" value="Desencriptar">
+                </div>
+            </section>
+            <section class="seccion2">
+                <div class="contenedor-munieco">
+                    <img src="imagenes/dibujo.svg" alt="minueco" class="munieco">
+                </div>
+                <div class="contenedor-h3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+                <div class="contenedor-copiar">
+                    <button class="btn-copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Creado por Yared Rangel</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+
+</html>
